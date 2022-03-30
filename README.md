@@ -1,4 +1,4 @@
-⚠️ Note that this notebook was originally developed for BMW data. Instead, I used google play store reviews data from [kaggle](https://www.kaggle.com/datasets/shivkumarganesh/tinder-google-play-store-review) to get a similiar result. Doc2Vec model is trained on around 800k cleaned and tokenized sentences. Then we took a sample of $n=10000$ and infer DocEmbeddings for these sentences.
+⚠️ Note that this notebook was originally developed for BMW data. Instead, I used google play store reviews data from [kaggle](https://www.kaggle.com/datasets/shivkumarganesh/tinder-google-play-store-review) to get a similiar result. Doc2Vec model is trained on around 800k cleaned and tokenized sentences. Then we took a sample of 10.000 reviews, did a sentence split and finally infer DocEmbeddings for these sentences.
 
 **INTRODUCTION**
 
