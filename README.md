@@ -7,7 +7,7 @@ This Notebook can be splitted into the following sections:
 - **Tokenize Data**: Tokenize the Data using the 'MyTokenizer' Class. Tokens serve as the input for our Doc2Vec Model and can be interpreted as a cleaned version of a word
 - **Create DocEmbeddings**: Create numerical representations of our text data, which we then use for dimensionality reduction and clustering
 - **Reduce Dimensionality**: DocEmbeddings have a default shape of 200 dimensions, which we cannot visualize and correctly work with. Thats why we use TSNE in order to reduce the dimensions to two dimensions while preservering the overall structure of the data
-- **Clustering and Visualization**: We then use the two dimensional TSNE data to cluster and visualize it via bokeh. Note that github does not show bokeh visualization (I choosed seaborn instead). If you're interested in the bokeh plot, which allows hovering over the scatter plot, run the notebook locally and call _myvisualizer_TSNE.plot()_ in the section 'TSNE Clustering'.
+- **Clustering and Visualization**: We then use the two dimensional TSNE data to cluster and visualize it via bokeh. Note that github does not show bokeh visualization (I choose seaborn instead). If you're interested in the bokeh plot, which allows hovering over the scatter plot, run the notebook locally and call _myvisualizer_TSNE.plot()_ in the section 'TSNE Clustering'.
 - **Additional Function Sections**: We can visualize n-grams to see which keywords get captured by each cluster (Explainability AI). We can also find similar documents given an arbitrary input doc. We can also dive deeper into a certain cluster using the 'draw_subcluster' function. Lastly we can use the _OpenAI Text Summarization_ to generate a summarization of each cluster.
 
 The 'Backend' has been written in the _custom_classes_ directory as classes each (OOP paradigm). This ensure that the code can be changed easily without losing the overview. In general, this notebook serves as a console, where we only look at the results and define the hyperparameters for each section. Hyperparameters are written in capitalized letters and can be defined arbitrary.
@@ -28,7 +28,6 @@ The 'Backend' has been written in the _custom_classes_ directory as classes each
 **POINTS TO IMPROVE / POSSIBLE EXTENSIONS**
 - Improve our Doc2Vec Model by training it with more data (> 1 Million). Current master model is trained on ~850k cleaned and tokenized **sentences**
 - Fine tuning is a long and difficult process and each use cases needs different hyperparameters
-- Impact Integration
 - Challenge Doc2Vec approach by a transformer approach (e.g. BERT)
 _______
 _Author: Alessio Negrini ([LinkedIn](https://www.linkedin.com/in/alessio-negrini-9a7847230/)), 23rd March 2022_
